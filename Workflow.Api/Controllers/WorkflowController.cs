@@ -10,7 +10,7 @@ namespace Workflow.Api.Controllers
     {
         public bool Execute(string workflowName)
         {
-            return View();
+            return true;
         }
     }
 }
