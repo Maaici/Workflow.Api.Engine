@@ -6,9 +6,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Workflow.Api.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     public class ValuesController : Controller
     {
+
         // GET api/values
         [HttpGet]
         public IEnumerable<string> Get()

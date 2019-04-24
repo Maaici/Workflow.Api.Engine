@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workflow.Api", "Workflow.Api\Workflow.Api.csproj", "{0D5DF1F6-706A-4E88-91A3-93483ED1EA5A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Workflow.Api", "Workflow.Api\Workflow.Api.csproj", "{0D5DF1F6-706A-4E88-91A3-93483ED1EA5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XN.Framewoek.Workflow", "XN.Framewoek.Workflow\XN.Framewoek.Workflow.csproj", "{77468CB7-22C6-42C7-BA28-B19F7B0FB567}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{0D5DF1F6-706A-4E88-91A3-93483ED1EA5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D5DF1F6-706A-4E88-91A3-93483ED1EA5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D5DF1F6-706A-4E88-91A3-93483ED1EA5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77468CB7-22C6-42C7-BA28-B19F7B0FB567}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77468CB7-22C6-42C7-BA28-B19F7B0FB567}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77468CB7-22C6-42C7-BA28-B19F7B0FB567}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77468CB7-22C6-42C7-BA28-B19F7B0FB567}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
