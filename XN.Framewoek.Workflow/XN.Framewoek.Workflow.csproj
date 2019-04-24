@@ -10,7 +10,6 @@
 
   <ItemGroup>
     <Folder Include="flows\" />
-    <Folder Include="steps\" />
   </ItemGroup>
 
 </Project>
