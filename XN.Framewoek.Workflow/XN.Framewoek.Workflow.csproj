@@ -8,8 +8,4 @@
     <PackageReference Include="WorkflowCore" Version="1.9.3" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="flows\" />
-  </ItemGroup>
-
 </Project>
