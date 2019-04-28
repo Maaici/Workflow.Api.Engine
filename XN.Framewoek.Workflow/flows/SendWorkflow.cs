@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using WorkflowCore.Interface;
 using WorkflowCore.Models;
-using XN.Framewoek.Workflow.models;
+using Workflow.Models;
 using XN.Framework.Workflow.Steps;
 
 namespace XN.Framewoek.Workflow.flows

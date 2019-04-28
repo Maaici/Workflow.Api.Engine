@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Workflow.Api", "Workflow.Api\Workflow.Api.csproj", "{0D5DF1F6-706A-4E88-91A3-93483ED1EA5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XN.Framewoek.Workflow", "XN.Framewoek.Workflow\XN.Framewoek.Workflow.csproj", "{77468CB7-22C6-42C7-BA28-B19F7B0FB567}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XN.Framewoek.Workflow", "XN.Framewoek.Workflow\XN.Framewoek.Workflow.csproj", "{77468CB7-22C6-42C7-BA28-B19F7B0FB567}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workflow.Models", "Workflow.Models\Workflow.Models.csproj", "{6FB8F61C-DEF5-4835-9DFD-D7E0B52545BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{77468CB7-22C6-42C7-BA28-B19F7B0FB567}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77468CB7-22C6-42C7-BA28-B19F7B0FB567}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77468CB7-22C6-42C7-BA28-B19F7B0FB567}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FB8F61C-DEF5-4835-9DFD-D7E0B52545BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FB8F61C-DEF5-4835-9DFD-D7E0B52545BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FB8F61C-DEF5-4835-9DFD-D7E0B52545BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FB8F61C-DEF5-4835-9DFD-D7E0B52545BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

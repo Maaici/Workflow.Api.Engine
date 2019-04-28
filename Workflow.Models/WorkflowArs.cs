@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace XN.Framewoek.Workflow.models
+namespace Workflow.Models
 {
     /// <summary>
     /// 工作流参数集合
