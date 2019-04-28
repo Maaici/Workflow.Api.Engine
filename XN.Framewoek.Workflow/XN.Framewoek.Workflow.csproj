@@ -9,8 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="flows\" />
-    <Folder Include="steps\" />
+    <ProjectReference Include="..\Workflow.Models\Workflow.Models.csproj" />
   </ItemGroup>
 
 </Project>
