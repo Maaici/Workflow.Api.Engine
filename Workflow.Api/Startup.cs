@@ -11,6 +11,9 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.Extensions.PlatformAbstractions;
 using Swashbuckle.AspNetCore.Swagger;
+using Workflow.Models;
+using WorkflowCore.Interface;
+using XN.Framewoek.Workflow.flows;
 
 namespace Workflow.Api
 {
@@ -27,6 +30,8 @@ namespace Workflow.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddWorkflow();
+            services.AddLogging();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Info
@@ -45,6 +50,10 @@ namespace Workflow.Api
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            var host = app.ApplicationServices.GetService<IWorkflowHost>();
+            host.RegisterWorkflow<SendWorkflow, WorkflowArgs>();
+            host.RegisterWorkflow<ReceiveWorkflow, WorkflowArgs>();
+            host.Start();
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();    

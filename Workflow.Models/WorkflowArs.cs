@@ -23,13 +23,13 @@ namespace Workflow.Models
     {
         public StpeTypes StpeType { get; set; }
         public string FunctionName { get; set; }
-        public List<Parameter> Params { get; set; }
+        public List<Parameters> Params { get; set; }
     }
 
     /// <summary>
     /// 方法参数列表
     /// </summary>
-    public class Parameter
+    public class Parameters
     {
         public string paramName { get; set; }
         public TypeCode ParamType { get; set; }

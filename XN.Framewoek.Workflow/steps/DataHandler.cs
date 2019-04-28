@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
 using WorkflowCore.Interface;
 using WorkflowCore.Models;
-using XN.Framewoek.Workflow.models;
+using Workflow.Models;
+using AssemblyOperator;
 
 namespace XN.Framework.Workflow.Steps
 {
@@ -18,10 +19,12 @@ namespace XN.Framework.Workflow.Steps
         //
         public override ExecutionResult Run(IStepExecutionContext context)
         {
-            foreach (var item in Args.MyProperty)
+            //改步骤总是中间步骤
+            var data = Args.MyProperty.Where(x => x.StpeType == StpeTypes.Step2);
+            foreach (var item in data)
             {
                 //根据item里面的方法名和参数等 执行对应的操作
-
+                AssemblyExecuter.Execute(item);
             }
             return ExecutionResult.Next();
         }

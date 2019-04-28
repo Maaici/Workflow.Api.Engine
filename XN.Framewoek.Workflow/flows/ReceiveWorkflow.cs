@@ -8,6 +8,9 @@ using XN.Framework.Workflow.Steps;
 
 namespace XN.Framewoek.Workflow.flows
 {
+    /// <summary>
+    /// 接收(入库)流程的步骤执行顺序应是 : MsgTransceiver => DataHandler => DbOperater
+    /// </summary>
     public class ReceiveWorkflow : IWorkflow<WorkflowArgs>
     {
         public string Id => "ReceiveWorkflow";
@@ -19,7 +22,7 @@ namespace XN.Framewoek.Workflow.flows
             builder
                 .StartWith<MsgTransceiver>()
                 .Input(step => step.Args, data => data)
-                .OnError(WorkflowErrorHandling.Retry)
+                //.OnError(WorkflowErrorHandling.Retry)
                 .Then<DataHandler>()
                 .Input(step => step.Args, data => data)
                 .Then<DbOperater>()

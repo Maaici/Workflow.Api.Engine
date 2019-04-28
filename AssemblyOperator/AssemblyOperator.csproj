@@ -5,11 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="WorkflowCore" Version="1.9.3" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\AssemblyOperator\AssemblyOperator.csproj" />
     <ProjectReference Include="..\Workflow.Models\Workflow.Models.csproj" />
   </ItemGroup>
 
